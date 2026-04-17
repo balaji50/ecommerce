@@ -39,7 +39,7 @@ export class MobilepageComponent implements OnInit {
     this.productDisplay = this.productItems.filter(
       (product) => product.category === "smartphones"
     );
-    console.log(this.productDisplay);
+    console.log("Show me Mobile Products:", this.productDisplay);
   }
 
 
@@ -52,6 +52,6 @@ export class MobilepageComponent implements OnInit {
   }
 
   Navigate(){
-    this.router.navigate(["navigateitems","product_Details"]);
+    this.router.navigate(["navigateitems","product_details"]);
   }
 }

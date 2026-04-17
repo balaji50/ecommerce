@@ -14,7 +14,7 @@ export class GetproductService {
   }
 
   getdata2() {
-    return this.http.get<any>("https://dummyjson.com/products")
+    return this.http.get<any>('https://dummyjson.com/products/search?q=phone')
   }
 
   // searchbar function
